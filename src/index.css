@@ -7,4 +7,27 @@
 @tailwind utilities;
 
 
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0b2c; /* Color del fondo de la pista */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0982a7; /* Color de la barra */
+    border-radius: 5px; /* Redondeo de la barra */
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6c068b; /* Color al pasar el mouse por encima */
+}
+
+
+
+
+
 

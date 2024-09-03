@@ -9,6 +9,10 @@ import phone from '../assets/phone.svg'
 export default function Navbar({ onProjectsClick }) {
   const [open, setIsOpen] = useState(false);
 
+  const homeHandler = () => {
+    window.location.reload()
+  }
+
   const handleOpen = () => {
     setIsOpen(!open);
   };
@@ -43,7 +47,7 @@ export default function Navbar({ onProjectsClick }) {
           {"<"} Projects {" />"}
         </p>
         <p
-        
+          onClick={homeHandler}
           className="text-xl text-purple-500 font-audiowide sm:block hidden ml-6 cursor-pointer "
           style={{
             transition: 'text-shadow 0.3s ease-in-out',
@@ -54,7 +58,7 @@ export default function Navbar({ onProjectsClick }) {
           }
           onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')}
         >
-          {"<"} contact {" />"}
+          {"<"} Home {" />"}
         </p>
         <img
         onClick={onProjectsClick}
@@ -63,6 +67,7 @@ export default function Navbar({ onProjectsClick }) {
           alt="proyect"
         />
         <img
+          onClick={homeHandler}
           src={phone}
           className="w-[40px] sm:hidden block mr-12"
           alt=""
