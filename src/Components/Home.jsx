@@ -66,14 +66,14 @@ function Home() {
             </div>
 
             <div className="absolute sm:right-2 sm:bottom-36 bottom-[10px] right-16 sm:block flex ">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="tel:+524426665226" target="_blank">
                 <img
                   className="mb-5 sm:w-[35px] w-[45px] sm:mr-0 mr-3 hover:scale-110 transition-all  "
                   src={whatsPurple}
                   alt="WhatsApp"
                 />
               </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/SROSWALDO" target="_blank" rel="noopener noreferrer">
                 <img
                   className="mb-5 sm:w-[35px] w-[45px] sm:mr-0 mr-3 hover:scale-110 transition-all"
                   src={gitPurple}
@@ -81,14 +81,14 @@ function Home() {
                 />
               </a>
 
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/oswaldo-palacios-perez-523887270/" target="_blank" rel="noopener noreferrer">
                 <img
                   className="mb-5 sm:w-[35px] w-[45px] sm:mr-0 mr-3 hover:scale-110 transition-all"
                   src={linkdin}
                   alt="Linkdin"
                 />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:yaco2002@live.com.mx" target="_blank" rel="noopener noreferrer">
                 <img
                   className="mb-5 sm:w-[35px] w-[45px] sm:mr-0 mr-3 hover:scale-110 transition-all"
                   src={gmail}
