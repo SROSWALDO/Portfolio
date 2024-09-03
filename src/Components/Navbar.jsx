@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+
 import menu from '../assets/menu.svg'
 import logo from '../assets/LOGO.png'
 import { useState } from 'react'
 import proyect from '../assets/proyect.svg'
 import phone from '../assets/phone.svg'
 
-export default function Navbar() {
+export default function Navbar({ onProjectsClick }) {
   const [open, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -27,7 +29,8 @@ export default function Navbar() {
         style={{ transitionDuration: '300ms' }}
       >
         <p
-          className="text-xl text-purple-500 font-audiowide sm:block hidden"
+          onClick={onProjectsClick}
+          className="text-xl text-purple-500 font-audiowide sm:block hidden cursor-pointer "
           style={{
             transition: 'text-shadow 0.3s ease-in-out',
           }}
@@ -37,10 +40,11 @@ export default function Navbar() {
           }
           onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')}
         >
-          {"<"} Proyects {" />"}
+          {"<"} Projects {" />"}
         </p>
         <p
-          className="text-xl text-purple-500 font-audiowide sm:block hidden ml-6"
+        
+          className="text-xl text-purple-500 font-audiowide sm:block hidden ml-6 cursor-pointer "
           style={{
             transition: 'text-shadow 0.3s ease-in-out',
           }}
@@ -53,6 +57,7 @@ export default function Navbar() {
           {"<"} contact {" />"}
         </p>
         <img
+        onClick={onProjectsClick}
           src={proyect}
           className="w-[40px] sm:hidden block mr-5"
           alt="proyect"
