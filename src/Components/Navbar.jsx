@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
 
-import menu from '../assets/menu.svg'
-import logo from '../assets/LOGO.png'
-import { useState } from 'react'
-import proyect from '../assets/proyect.svg'
-import phone from '../assets/phone.svg'
+import menu from "../assets/menu.svg";
+import logo from "../assets/LOGO.png";
+import { useState } from "react";
+import proyect from "../assets/proyect.svg";
+import phone from "../assets/phone.svg";
 
 export default function Navbar({ onProjectsClick }) {
   const [open, setIsOpen] = useState(false);
 
   const homeHandler = () => {
-    window.location.reload()
-  }
+    window.location.reload();
+  };
 
   const handleOpen = () => {
     setIsOpen(!open);
@@ -19,7 +19,12 @@ export default function Navbar({ onProjectsClick }) {
 
   return (
     <div className="flex justify-between py-1 w-full relative px-2">
-      <img className="w-[60px] h-[55px] ml-3" src={logo} alt="" />
+      <img
+        onClick={homeHandler}
+        className="w-[60px] h-[55px] ml-3 cursor-pointer hover:translate-x-1 transition-all "
+        src={logo}
+        alt=""
+      />
       <img
         onClick={handleOpen}
         className="w-[60px] cursor-pointer hover:text-blue-600 hover:scale-105 transition-all sm:w-[70px]"
@@ -28,40 +33,42 @@ export default function Navbar({ onProjectsClick }) {
       />
       <div
         className={`absolute top-5 flex sm:right-32 right-24 transition-transform transform ${
-          open ? 'scale-100 opacity-100' : 'scale-75 opacity-0'
+          open ? "scale-100 opacity-100" : "scale-75 opacity-0"
         }`}
-        style={{ transitionDuration: '300ms' }}
+        style={{ transitionDuration: "300ms" }}
       >
+        <p
+          onClick={homeHandler}
+          className="text-xl text-purple-500 font-audiowide sm:block hidden ml-6 cursor-pointer mr-5 "
+          style={{
+            transition: "text-shadow 0.3s ease-in-out",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.textShadow =
+              "0 0 1px #9900f5, 0 0 4px #9900f5, 0 0 1px #9900f5")
+          }
+          onMouseLeave={(e) => (e.currentTarget.style.textShadow = "none")}
+        >
+          {"<"} Home {" />"}
+        </p>
+
         <p
           onClick={onProjectsClick}
           className="text-xl text-purple-500 font-audiowide sm:block hidden cursor-pointer "
           style={{
-            transition: 'text-shadow 0.3s ease-in-out',
+            transition: "text-shadow 0.3s ease-in-out",
           }}
           onMouseEnter={(e) =>
             (e.currentTarget.style.textShadow =
-              '0 0 1px #9900f5, 0 0 4px #9900f5, 0 0 1px #9900f5')
+              "0 0 1px #9900f5, 0 0 4px #9900f5, 0 0 1px #9900f5")
           }
-          onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')}
+          onMouseLeave={(e) => (e.currentTarget.style.textShadow = "none")}
         >
           {"<"} Projects {" />"}
         </p>
-        <p
-          onClick={homeHandler}
-          className="text-xl text-purple-500 font-audiowide sm:block hidden ml-6 cursor-pointer "
-          style={{
-            transition: 'text-shadow 0.3s ease-in-out',
-          }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.textShadow =
-              '0 0 1px #9900f5, 0 0 4px #9900f5, 0 0 1px #9900f5')
-          }
-          onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')}
-        >
-          {"<"} Home {" />"}
-        </p>
+
         <img
-        onClick={onProjectsClick}
+          onClick={onProjectsClick}
           src={proyect}
           className="w-[40px] sm:hidden block mr-5"
           alt="proyect"
