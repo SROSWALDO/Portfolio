@@ -2,7 +2,9 @@ import drivers from "../assets/drivers (1).png";
 import logistics from "../assets/logistics-removebg.png";
 import todo from "../assets/todo-removebg.png";
 import bee from "../assets/becomfree-removebg.png";
-import github from '../assets/github.svg'
+import github from "../assets/github.svg";
+import cubix from "../assets/cubix.png";
+import clinica from "../assets/clini.png";
 
 export default function Projects() {
   return (
@@ -15,7 +17,7 @@ export default function Projects() {
 
       <div className="sm:flex justify-between  sm:p-5 p-1 sm:mb-0 mb-20 ">
         <div>
-          <img className="w-[600px]" src={drivers} alt="" />
+          <img className="w-[600px]" src={clinica} alt="" />
         </div>
 
         <div className=" m-auto">
@@ -25,17 +27,22 @@ export default function Projects() {
           <p className="sm:w-[600px] text-xl font-audiowide text-white ">
             It is a{" "}
             <span className="text-purple-600 border-b border-b-cyan-300">
-              full-stack
+              Freelance application
             </span>{" "}
-            app made with react and nodejs for the back end and postgreSql,
-            using the F1 drivers API in which you can find out their
-            information, it has filters to be able to classify them by team,
-            age, alphabetical order, and you can create your Driver!!.
+            made with <span  className="text-purple-600 border-b border-b-cyan-300">Next JS</span> for a medical clinic Cristo Medico. The
+            application allows patient registration, cash management, automatic
+            ticket generation, file upload, appointment creation and advanced
+            filters for searching by name. It is a robust platform with complex
+            functionalities designed to improve the user experience.
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/SROSWALDO/DriversApi" target="_blank" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/SROSWALDO/clinica"
+              target="_blank"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
@@ -49,26 +56,29 @@ export default function Projects() {
           <p className="sm:w-[600px] text-xl font-audiowide text-white ">
             It is a{" "}
             <span className="text-purple-600 border-b border-b-cyan-300">
-              Freelance
+            internship
             </span>{" "}
-            app, full-stack app made with react and nodejs for the back end and
-            postgreSql,I developed the app for the Palacios Logistics company,
-            in which they enter their shipping information. This information can
-            be downloaded as a PDF and when creating the record, the
-            corresponding users are also sent the information by email. The
-            administrator has a dashboard and can create users and view all the
-            records, among other things. .
+            Participation in the development of a professional cryptocasino,
+            collaborating in the creation of multiple web pages and ensuring
+            adaptability to mobile devices. Creation of various web pages with
+            different functionalities, Teamwork using agile methodologies for
+            the implementation of key functionalities. Technologies used: React,
+            Tailwind CSS, AntDesign, TypeScript.
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/SROSWALDO/TradeRegister" target="_blank" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/FabianBenShaddai/Cubix"
+              target="_blank"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
 
         <div>
-          <img className="w-[600px]" src={logistics} alt="" />
+          <img className="w-[600px]" src={cubix} alt="" />
         </div>
       </div>
 
@@ -91,16 +101,18 @@ export default function Projects() {
             information, it has filters to be able to classify them by team,
             age, alphabetical order, and you can create your Driver!!.
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/SROSWALDO/DriversApi" target="_blank" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/SROSWALDO/DriversApi"
+              target="_blank"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
       </div>
-
-      
 
       <div className="sm:flex justify-between  sm:p-5 p-1 sm:mb-0 mb-20 ">
         <div className=" m-auto">
@@ -120,10 +132,14 @@ export default function Projects() {
             administrator has a dashboard and can create users and view all the
             records, among other things. .
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/SROSWALDO/TradeRegister" target="_blank" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/SROSWALDO/TradeRegister"
+              target="_blank"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
@@ -153,10 +169,13 @@ export default function Projects() {
             a section that tells you the information of pending or completed
             tasks. .
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/SROSWALDO/Task" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/SROSWALDO/Task"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
@@ -177,10 +196,14 @@ export default function Projects() {
             functions, dashboard, filtering, everything essential that an
             optimized ecommerce app with an impressive design should have
           </p>
-          <div className="flex justify-center mt-5" >
-            <a href="https://github.com/INSolisLoyo/PF-Indumentario.ecommerce_front" target="_blank" className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center">
-            Github
-            <img className="w-[30px] ml-1" src={github} alt="" />
+          <div className="flex justify-center mt-5">
+            <a
+              href="https://github.com/INSolisLoyo/PF-Indumentario.ecommerce_front"
+              target="_blank"
+              className="text-xl text-white font-audiowide bg-violet-800 w-[150px] rounded-xl flex justify-center h-[40px] items-center"
+            >
+              Github
+              <img className="w-[30px] ml-1" src={github} alt="" />
             </a>
           </div>
         </div>
