@@ -63,7 +63,7 @@ function Home() {
               />
               <div>
                 <a
-                  href="/Oswaldo_CV.pdf"
+                  href="/CV_OPP.pdf"
                   download="Oswaldo_CV.pdf"
                   className="sm:text-xl font-audiowide text-purple-600 absolute sm:left-3 sm:bottom-36 bottom-64 py-2 border-l border-l-cyan-500 hover:bg-purple-600/70 hover:text-cyan-400 hover:border-none hover:transition-all cursor-pointer "
                   style={{
